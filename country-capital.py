@@ -40,7 +40,7 @@ print "</head> <meta charset='UTF-8'>"
 cap=statesinfo.values()
 l=statesinfo.keys()
 random.shuffle(l)
-print('<form action="/cgi-bin/cntr-cap.py" method="post" target="_blank">')
+print('<form action="/gitapp/cntr-cap.py" method="post" target="_blank">')
 while questions < 5:
     state=l[questions]
     v = statesinfo[state]

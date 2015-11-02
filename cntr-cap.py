@@ -23,11 +23,11 @@ points=0
  
 form = cgi.FieldStorage() 
 
-print "Content-type:text/html\r\n\r\n"
+print "Content-type:text/html charset=utf8 \r\n\r\n"
 print "<html>"
 print "<head>"
 print "<title>Radio - Fourth CGI Program</title>"
-print "</head>"
+print "</head> <meta charset='UTF-8'>"
 print "<body>"
 
 for x in range(0,5):
