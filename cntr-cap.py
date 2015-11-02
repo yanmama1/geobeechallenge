@@ -6,7 +6,7 @@ import mysql.connector
 cnx = mysql.connector.connect(user='geobeeshop', database='beeworld', host='mysql.geobeeshop.com', password='geobeemaster1')
 
 cur = cnx.cursor(dictionary=True)
-query = ("select n.name country, c.name capital from country n join city c on n.capital = c.id;")
+query = ("select n.name country, c.name capital from Country n join City c on n.capital = c.id where n.Population > 2000000;")
 cur.execute(query)
 rows = cur.fetchall()
 # print(rows)
